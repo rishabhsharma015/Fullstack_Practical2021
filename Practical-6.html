@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .container{
+            display: inline-flex;
+            margin-left: 67px;
+            margin-top: 20px;
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 35px;
+        }
+        .box img{
+            width: 90%;
+            padding: 15px;
+        }
+        .box h4{
+            text-align: center;
+        
+        }
+        .box p{
+            text-align: justify;
+            padding: 10px;
+            padding-top: 0px;
+        }
+        .button{
+            display: block;
+            margin-top: 15px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        .button:hover{
+            background-color: blue;
+        }
+        #boxcolor1{
+            background-color: orange;
+        }   
+        #boxcolor2{
+            background-color: rgb(210, 177, 30);
+        }
+        #boxcolor3{
+            background-color: cadetblue;
+        }
+        #boxcolor4{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: red; text-align: center;">Practical-6:Create a Card Layout using CSS layout properties.<h2></h2>
+    <div class="container">
+    <div class="box" id="boxcolor1">
+        <div><img src="./assets/ithtml.jpg" alt="Can't load"></div>
+        <h4>Introduction to HTML</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo quas dolorum nesciunt quis reprehenderit, deleniti totam doloribus omnis delectus vero, debitis odit.  </p>
+        <div class="image" style="text-align: center;"><a href="./HTMLicon.html" class="button">Read More</a></div>
+    </div>
+    <div class="box" id="boxcolor2">
+        <div><img src="./assets/itcss.jpg" alt="Can't load"></div>
+        <h4>Introduction to CSS</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo quas dolorum nesciunt quis reprehenderit, deleniti totam doloribus omnis delectus vero, debitis odit.  </p>
+        <div class="image" style="text-align: center;"><a href="./CSSicon.html" class="button">Read More</a></div>
+    </div>
+    <div class="box" id="boxcolor3">
+        <div><img src="./assets/itjs.jpg" alt="Can't load"></div>
+        <h4>Introduction to Javascript</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo quas dolorum nesciunt quis reprehenderit, deleniti totam doloribus omnis delectus vero, debitis odit.  </p>
+        <div class="image" style="text-align: center;"><a href="./JSicon.html" class="button">Read More</a></div>
+    </div>
+    <div class="box" id="boxcolor4">
+        <div><img src="./assets/itboot.png" alt="Can't load"></div>
+        <h4>Introduction to Bootstrap</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo quas dolorum nesciunt quis reprehenderit, deleniti totam doloribus omnis delectus vero, debitis odit.  </p>
+        <div class="image" style="text-align: center;"><a href="./BOOTicon.html" class="button">Read More</a></div>
+    </div>
+</div>
+
+</body>
+</html>
