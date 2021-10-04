@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-13</title>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .head{
+            width: 850px;
+            height: 85px;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #63B4B8;
+            color: black;
+        }
+
+        body{
+            background-color: #A9E4D7;
+        }
+
+        .content{
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 5px;
+            font-size: 0.9em;
+            width: 850px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            /* providing shadow to the box */
+            box-shadow: #7F7C82;
+        }
+
+        .content thead tr{
+            /* background-color: cornflowerblue;
+            color: darkblue; */
+            text-align: left;
+            font-weight: bold;
+            font-size: 45px;
+        }
+
+        #one{
+            background-color: #68de7c;
+            color: purple;
+            text-align: center;
+        }
+
+        #two{
+            background-color: #1ed14b;
+            color: purple;
+            text-align: center;
+        }
+
+        #three{
+            background-color: #00ba37;
+            color: purple;
+            text-align: center;
+        }
+
+        #four{
+            background-color: #00a32a;
+            color: purple;
+            text-align: center;
+        }
+
+
+        /* tbody .row1{
+            font-size: 50px;
+        } */
+        #rd1{
+            background-color: #68de7c;
+            text-align: center;
+        }
+        #rd2{
+            background-color: #1ed14b;
+            text-align: center;
+        }
+        #rd3{
+            background-color: #00ba37;
+            text-align: center;
+        }
+        #rd4{
+            background-color: #00a32a;
+            text-align: center;
+        }
+
+        #rd5{
+            background-color: #68de7c;
+            text-align: center;
+        }
+        #rd6{
+            background-color: #1ed14b;
+            text-align: center;
+        }
+        #rd7{
+            background-color: #00ba37;
+            text-align: center;
+        }
+        #rd8{
+            background-color: #00a32a;
+            text-align: center;
+        }
+
+        #rd9{
+            background-color: #68de7c;
+            text-align: center;
+        }
+        #rd10{
+            background-color: #1ed14b;
+            text-align: center;
+        }
+        #rd11{
+            background-color: #00ba37;
+            text-align: center;
+        }
+        #rd12{
+            background-color: #00a32a;
+            text-align: center;
+        }
+        
+        #a{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+        }
+        #b{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+            
+        }
+        #c{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+        }
+        #d{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+        }
+
+        #e{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #f{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #g{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #h{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+
+        #i{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #j{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #k{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #l{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+
+        #m{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #n{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #o{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+        #p{
+            background-color: #f5e6ab;
+            text-align: center;
+        }
+
+        #q{
+            background-color: #68de7c;
+            text-align: center;
+            color: green;
+        }
+        #r{
+            background-color: #1ed14b;
+            text-align: center;
+            color: green;
+            
+        }
+        #s{
+            background-color: #00ba37;
+            text-align: center;
+            color: green;
+        }
+        #t{
+            background-color: #00a32a;
+            text-align: center;
+            color: green;
+        }
+
+
+        #u{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: red;
+        }
+        #v{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+            
+        }
+        #w{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+        }
+        #x{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+        }
+
+
+
+        #y{
+            background-color: #68de7c;
+            text-align: center;
+            color: red;
+        }
+        #z{
+            background-color: #1ed14b;
+            text-align: center;
+            color: red;
+            
+        }
+        #a1{
+            background-color: #00ba37;
+            text-align: center;
+            color: green;
+        }
+        #a2{
+            background-color: #00a32a;
+            text-align: center;
+            color: green;
+        }
+
+
+        #a3{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: red;
+        }
+        #a4{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: red;
+            
+        }
+        #a5{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: red;
+        }
+        #a6{
+            background-color: #f5e6ab;
+            text-align: center;
+            color: green;
+        }
+
+
+        #b1{
+            background-color: #68de7c;
+            text-align: center;
+        }
+        #b2{
+            background-color: #1ed14b;
+            text-align: center;   
+        }
+        #b3{
+            background-color: #00ba37;
+            text-align: center;
+        }
+        #b4{
+            background-color: #00a32a;
+            text-align: center;
+        }
+
+
+        
+
+        /* tbody tr td .b1{
+            background-color: purple;
+            color: white;
+            width: 100%;
+            height: 30px;
+            margin:auto;
+        } */
+
+        .but1{
+            background-color: purple;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .but1:hover{
+            background-color: red;
+            color: white;
+        }
+
+
+        .content th, .content td{
+            padding: 12px 15px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h2>Select Your Plan</h2>
+    </div>
+    <table class="content">
+        <thead>
+            <tr>
+                <th id="one"><i class="fas fa-mobile"></i></i>Basic</th>
+                <th id="two"><i class="far fa-plus-square"></i>Plus</th>
+                <th id="three"><i class="fas fa-home"></i>Deluxe</th>
+                <th id="four"><i class="fas fa-home"></i>Pro</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row1">
+                <td id="a"><b>Rs.500/-</b></td>
+                <td id="b"><b>Rs.1500/-</b></td>
+                <td id="c"><b>Rs.2500/-</b></td>
+                <td id="d"><b>Rs.3500/-</b></td>
+            </tr>
+            <tr>
+                <td id="rd1">50 Pages</td>
+                <td id="rd2">75 Pages</td>
+                <td id="rd3">Unlimited</td>
+                <td id="rd4">Unlimited</td>
+            </tr>
+            <tr>
+                <td id="e">3 User</td>
+                <td id="f">5 User</td>
+                <td id="g">10 User</td>
+                <td id="h">Unlimited</td>
+            </tr>
+            <tr>
+                <td id="rd5">10 Sites</td>
+                <td id="rd6">25 Sites</td>
+                <td id="rd7">100 Sites</td>
+                <td id="rd8">Unlimited</td>
+            </tr>
+            <tr>
+                <td id="i">50MB</td>
+                <td id="j">250MB</td>
+                <td id="k">1GB</td>
+                <td id="l">5GB</td>
+            </tr>
+            <tr>
+                <td id="rd9">Included</td>
+                <td id="rd10">Included</td>
+                <td id="rd11">Included</td>
+                <td id="rd12">Included</td>
+            </tr>
+
+            <tr>
+                <td id="m"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="n"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="o"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="p"><i class="fas fa-check" style="color: green;"></i></td>
+            </tr>
+
+            <tr>
+                <td id="q"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="r"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="s"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="t"><i class="fas fa-check" style="color: green;"></i></td>
+            </tr>
+
+            <tr>
+                <td id="u"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="v"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="w"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="x"><i class="fas fa-check" style="color: green;"></i></td>
+            </tr>
+
+            <tr>
+                <td id="y"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="z"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="a1"><i class="fas fa-check" style="color: green;"></i></td>
+                <td id="a2"><i class="fas fa-check" style="color: green;"></i></td>
+            </tr>
+
+            <tr>
+                <td id="a3"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="a4"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="a5"><i class="fas fa-times" style="color: red;"></i></td>
+                <td id="a6"><i class="fas fa-check" style="color: green;"></i></td>
+            </tr>
+
+            <tr>
+                <td id="b1"><Button class="but1">Sign Up</Button></td>
+                <td id="b2"><Button class="but1">Sign Up</Button></td>
+                <td id="b3"><Button class="but1">Sign Up</Button></td>
+                <td id="b4"><Button class="but1">Sign Up</Button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
