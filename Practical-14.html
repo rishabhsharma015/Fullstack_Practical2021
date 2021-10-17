@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #69DADB;
+        }
+
+        .container{
+            width: 300px;
+            height: 25vh;
+            background-color: #1597E5;
+            color: black;
+            margin: auto;
+            margin-top: 200px;
+            padding-top: 25px;
+            border: solid #113CFC;
+            border-radius: 4px;
+        }
+        .btn{
+            display: flex;
+            margin-top: 30px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .btn h1{
+            text-align: center;
+            color: black;
+        }
+
+        h2{
+            text-align: center;
+        }
+        
+        .inc{
+            padding: 12px;
+            margin: auto;
+            background-color: chartreuse;
+            cursor: pointer;
+        }
+
+        .dec{
+            padding: 12px;
+            margin: auto;
+            background-color: chartreuse;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <div class="btn">
+            <button class="dec" id="d"><i class="fas fa-minus"></i></button>
+            <h1 class="val">0</h1>
+            <button class="inc" id="i"><i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <script>
+        var inc = document.querySelector(".inc")
+        var dec = document.querySelector(".dec");
+        var count = document.querySelector(".val")
+
+        let counter = 0;
+        inc.addEventListener("click", () => {
+            if(counter>0){
+                document.getElementById("d").disabled = false;
+            }
+            counter++;
+            count.innerHTML = counter;
+        });
+
+        dec.addEventListener("click", () => {
+            if(counter>0){
+                counter--;
+                count.innerHTML = counter;
+            }
+            else if(counter == 0){
+                document.getElementById("d").disabled = true;
+            }
+        });
+
+    </script>
+</body>
+</html>
