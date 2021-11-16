@@ -37,6 +37,7 @@ h1{
     text-align: center;
     margin-top: 18px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .headLine .btn a{
@@ -92,6 +93,7 @@ h1{
     border: 2px solid blue;
     text-align: center;
     border-radius: 17px;
+    cursor: pointer;
 }
 
 .lines .btn2 a{
