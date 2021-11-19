@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-y: hidden;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #AE4CCF;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.container{
+    background-color: #FEFBF3;
+    width: 450px;
+    max-height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.header{
+    background-color: #F8F0DF;
+    border-radius: 6px;
+    padding: 20px 40px;
+}
+
+.header h2{
+    display: flex;
+    margin: 0;
+    font-family: 'M PLUS 2', sans-serif;
+    justify-content: center;
+}
+
+.form{
+    padding: 20px 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.form-control label{
+    margin-bottom: 5px;
+    display: inline-block;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'M PLUS 2', sans-serif;
+    font-size: 17px;
+}
+
+.form-control.success input{
+    border: 3px solid #7eec3e;
+    border-radius: 5px;
+}
+
+.form-control.error input{
+    border: 3px solid #FF0000;
+    border-radius: 5px;
+}
+
+
+.form-control i{
+    position: absolute;
+    top: 46px;
+    right: 14px;
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #7eec3e;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #FF0000;
+    visibility: visible;
+}
+
+.form-control small{
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #FF0000;
+}
+
+.form button{
+    background: linear-gradient(#AE4CCF,#753188);
+    width: 100%;
+    padding: 15px 30px;
+    color: #FDFEFF;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-family: 'M PLUS 2', sans-serif;
+    font-size: 17px;
+}

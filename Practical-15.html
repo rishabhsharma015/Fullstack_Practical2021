@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="prac15style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Nunito:wght@300&family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Practical-15</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form class="form" id="form">
+            <!-- 1 -->
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <!-- 2 -->
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Invalid Email</small>
+            </div>
+
+            <!-- 3 -->
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <!-- 4 -->
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" id="password2" placeholder="Confirm your password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Password not matched</small>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="./prac15.js"></script>
+</body>
+</html>
